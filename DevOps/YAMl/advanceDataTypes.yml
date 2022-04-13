@@ -1,0 +1,71 @@
+student: #!!seq
+  -marks
+  -name
+  -roll_no
+sparse seq:
+  # some of the keys of seq will be empty
+  -hey
+  -how
+  -
+  -
+  -Null
+  -sup
+nested sequnces:
+  - -mango
+    -apple
+    -banna
+  - -marks
+    -roll number
+    - date
+
+# key value pairs are called maps
+
+# !!map
+
+# nested mapping: map within an map
+name: zaffar
+role:
+  age: 22
+  job: student
+role1: { age: 22, student }
+
+# pairs :keys may have duplicate values
+
+pair example: !!pairs
+  - job: student
+  - job: teacher
+# same as
+pair ex: !!pairs [job: student, job: teacher]
+
+#this will be an array of hastables
+
+# !!set will aloow yu to have unique vaues
+names: set
+  ? kunal
+  ? zaffar
+  ? aalim
+
+# dictionary !!omap
+people: !!omap
+  - zaffar:
+      name: zaffar maqbool
+      age: 22
+      height: 173cm
+  - aalim:
+      name: aalim maqbool
+      age: 6
+      height: 100cm
+# resuing some properties using anchors
+likings of person: &base
+  fav fruit: mango
+  dislike: grapes
+person1:
+  name: zaffar
+  <<: *base
+person2:
+  name: aalim
+  <<: *base
+  # overide
+  dislike: berries  
+
+  

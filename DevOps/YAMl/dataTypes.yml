@@ -1,0 +1,40 @@
+# String variables
+
+name: zaffar maqbool
+fruit: "apple"
+job: "developer"
+
+bio: |
+  hey my name is zaffar.
+  i am very good programer.
+# write a single line in multiple lines
+message: >
+  this will 
+  all be 
+  in one single line
+
+#same as
+message": "this will all be in one single line"
+
+number: 5466 # intger
+marks: 98.9 #float
+booleanValue: no # boolean # n,N,fasle,Fasle,FALSE
+# same for tre-> yes,y,Y,YES
+
+# specifying types 
+zero: !!int 0
+positveNum : !!int 45
+Negative number : !!int -34
+binary: !!binary  0b110
+octal : !!int 0546
+decimal : !!float 54.3
+hexa: !!binary 0*45
+commaValue: !!binary +540_000
+#infinite : !! float .inf
+#booleanValue: !!bool no
+# null
+exponential numbers: 6.023E
+surname : !!null #Null,NULL
+# date and times
+date: 2002-12-12
+india time : 2002-12-12T02:59:34.10 +5:30 

@@ -1,0 +1,19 @@
+"apple": "I Am a red fruit"
+1: "THis is zaffar's roll number"
+---
+# lists
+- apple
+- mango
+- banna
+- Apple #case sensitive
+--- #Next data
+#Block Style
+cities:
+ - new dehli
+ - mumbai
+ - kashmir
+---
+cities:[new dehli,mumbai]
+---
+{mango: "yellow fruit",age: 22}
+... #End document
